@@ -1,0 +1,18 @@
+<h2 class="page-header">Recently Added</h2>
+<a href="/logou">Logout
+ 
+</a>
+
+<%- include('partials/style.ejs') %>
+
+  <body>
+    <div class="container">
+      <%- include('partials/header.ejs') %>
+      <div class="inner-container">
+        <%- include('partials/errorMessage.ejs') %>
+      
+      </div>
+    </div>
+  </body>
+
+<%- include('partials/bookGrid', { books: books, large: true }) %>
